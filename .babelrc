@@ -1,0 +1,24 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "entry"
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-async-generator-functions",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-export-default-from",
+        "@babel/plugin-proposal-function-bind",
+        "@babel/plugin-proposal-private-methods",
+        "@babel/plugin-proposal-private-property-in-object",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-unicode-property-regex",
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-syntax-async-generators",
+        "@babel/plugin-syntax-json-strings",
+        "@babel/plugin-syntax-nullish-coalescing-operator"
+    ]
+}
