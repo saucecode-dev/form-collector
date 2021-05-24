@@ -31,13 +31,22 @@ You can read about HTMLFormElement and HTMLFormElement.elements in the links bel
     import { FormCollector } from '@saucecode/form-collector';
 
     /**
+     * WRONG 
+     * 
      * Do no do this, FormCollector requires a single HTMLFormElement
      * FormCollector uses HTMLFormElement.elements to gather the data!
      */
-    
     let forms = document.querySelectorAll('your-form-selector');
     
-    // Use data...
+    /**
+     * CORRECT
+     * 
+     * FormCollector takes 1 argment and that argument should be a HTMLFormElement.
+     */
+    let form = document.querySelector('your-form-selector');
+    let collection = new FormCollector(form);
+    
+    // Do whatever with data.
 ```
 
 ### More examples
