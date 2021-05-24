@@ -1,0 +1,12 @@
+# Files
+.editorconfig
+npm-debug.log
+yarn-error.log
+yarn.lock
+build/config-local.json
+
+# Directories
+node_modules
+.cache-loader
+build
+src

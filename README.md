@@ -255,36 +255,3 @@ You can read about HTMLFormElement and HTMLFormElement.elements in the links bel
 
 </p>
 </details>
-
-## Plugin structure
-
-<details><summary>SHOW FILE STRUCTURE</summary>
-<p>
-
-```shell
-/saucecode/form-collector               # → Plugin root
-├── build/                              # → Plugin app
-│   ├── helpers/                        # → Plugin core functionality
-│   │   └── hmr-client.js               # → Hot middleware clinet
-│   ├── util/                           # → Plugin WordPress compatibility and helper classes.
-│   │   ├── addHotMiddleware.js         # → Plugin admin functionality
-│   │   └── desire.js                   # → Plugin admin functionality
-│   ├── config.js                       # → Plugin main App class
-│   ├── webpack.config.js               # → Plugin configration class
-│   ├── webpack.config.optimize.js      # → Plugin frontend class for loaoding assets
-│   └── webpack.config.watch.js         # → Plugin setup
-├── src/                                # → Yeah
-│   ├── form-collector.js               # → Plugin config files, automatically parsed and loaded by Config class.
-│   └── functions.js                    # → Plugin config files, automatically parsed and loaded by Config class.
-├── dist/                               # → Built plugin assets (never edit)
-├── node_modules/                       # → Node.js packages (never edit)
-├── .babelrc                            # → Editor config, works with PHP Storm and more.
-├── .eslintrc.js                        # → ES Lint  "Run Commands"
-├── .gitignore                          # → ES Lint  "Run Commands"
-├── package.json                        # → Node.js dependencies and scripts
-└── README.md                           # → Webpack mix file# → Composer packages (never edit)
-└── yarn.lock                           # → Webpack mix file# → Composer packages (never edit)
-```
-</p>
-</details>
-
