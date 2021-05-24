@@ -1,5 +1,7 @@
 # Files
 .editorconfig
+.babelrc
+.eslintrc.js
 npm-debug.log
 yarn-error.log
 yarn.lock
