@@ -17,8 +17,10 @@
         "@babel/plugin-proposal-object-rest-spread",
         "@babel/plugin-proposal-unicode-property-regex",
         "@babel/plugin-transform-runtime",
+        "@babel/plugin-transform-classes",
         "@babel/plugin-syntax-async-generators",
         "@babel/plugin-syntax-json-strings",
-        "@babel/plugin-syntax-nullish-coalescing-operator"
+        "@babel/plugin-syntax-nullish-coalescing-operator",
+        "babel-plugin-add-module-exports"
     ]
 }

@@ -23,6 +23,9 @@ class FormCollector {
      */
     #checkInputs = ['checkbox', 'radio'];
 
+    /**
+     * @param {HTMLFormElement} formElement
+     */
     constructor(formElement) {
         this.collection = {};
 
@@ -30,7 +33,7 @@ class FormCollector {
         this.#inputs = formElement.elements;
 
         this.startCollecting().then(() => {
-           // If we ever need to do stuff, event and so on.
+            // If we ever need to do stuff, event and so on.
         });
     }
 
@@ -121,7 +124,7 @@ class FormCollector {
                                  * Which is by far the most difficult to retrieve and format.
                                  */
                                 let baseName = name.split('[')[ 0 ];
-                                let matches = [...name.matchAll(/[(.*?)]/g)];
+                                let matches = [...name.matchAll(/\[(.*?)]/g)];
 
                                 // Rework the data a bit, we only want array index 1.
                                 for (let i in matches) {

@@ -15,6 +15,9 @@ let webpackConfig = {
         path: config.paths.dist,
         publicPath: config.publicPath,
         filename: `${assetsFilenames}.js`,
+        libraryTarget: 'commonjs2',
+        libraryExport: 'default',
+        library: 'FormCollector',
     },
     stats: {
         hash: false,

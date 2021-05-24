@@ -17,7 +17,7 @@ const config = merge({
     production: !!isProduction,
     entry: {
         "form-collector": [
-            "./index.js",
+            "./form-collector.js",
         ],
     },
     paths: {

@@ -1,2 +1,3 @@
-const formCollector = require('./form-collector');
-module.exports = [formCollector];
+// import FormCollector from "./form-collector";
+//
+// export { FormCollector };
