@@ -18,7 +18,6 @@ You can read about HTMLFormElement and HTMLFormElement.elements in the links bel
 
 ```html
     <!-- Do not do this... -->
-
     <input name="bad-example-1[key1]">
     <input name="bad-example-1[key1]"> <!-- this will overwrite the first -->
     <input name="bad-example-1[key1]"> <!-- this will overwrite the second -->
@@ -45,6 +44,10 @@ You can read about HTMLFormElement and HTMLFormElement.elements in the links bel
      */
     let form = document.querySelector('your-form-selector');
     let collection = new FormCollector(form);
+    
+    // Retrieve data
+    let data = collection.getCollection();            // As object, default.
+    let dataString = collection.getCollection(true);  // Object as JSON string
     
     // Do whatever with data.
 ```

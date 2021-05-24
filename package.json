@@ -1,8 +1,9 @@
 {
     "name": "@saucecode/form-collector",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Simple script that gathers form data, in particular inputs with array brackets in the name attribute.",
     "main": "dist/form-collector.min.js",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/saucecode-dev/form-collector.git"
