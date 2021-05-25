@@ -38,7 +38,7 @@ class FormCollector {
     }
 
     async startCollecting() {
-        return await this.collect();
+        return this.collect();
     }
 
     collect() {
@@ -56,7 +56,6 @@ class FormCollector {
 
                     // Ww have to make sure that it's a string before we can use .toLowerCase();
                     if (typeof tag === 'string') {
-
                         // Make sure it's lower case, just preference.
                         tag = tag.toLowerCase();
                     }

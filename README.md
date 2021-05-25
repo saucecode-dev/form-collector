@@ -16,12 +16,34 @@ You can read about HTMLFormElement and HTMLFormElement.elements in the links bel
 
 ## Usage
 
+### Incorrect
 ```html
     <!-- Do not do this... -->
-    <input name="bad-example-1[key1]">
-    <input name="bad-example-1[key1]"> <!-- this will overwrite the first -->
-    <input name="bad-example-1[key1]"> <!-- this will overwrite the second -->
+    <form id="bad-example-1">
+        <input name="bad-example-1[key1]" value="value1">
+        <input name="bad-example-1[key1]" value="value2"> <!-- this will overwrite the first -->
+        <input name="bad-example-1[key1]" value="value3"> <!-- this will overwrite the second -->
+    </form>
 ```
+
+```javascript
+    let forms = document.querySelector('#bad-example-1');
+    let collection = new FormCollector(form);
+    
+    // Retrieve data
+    let data = collection.getCollection();
+
+    // console.log(data);
+    // Should print
+    //
+    // {
+    //     "bad-example-1": {
+    //         "key1": "value3"
+    //     }
+    // }
+```
+
+### Correct
 
 ```javascript
     /**

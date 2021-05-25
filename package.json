@@ -1,6 +1,6 @@
 {
     "name": "@saucecode/form-collector",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Simple script that gathers form data, in particular inputs with array brackets in the name attribute.",
     "main": "dist/form-collector.min.js",
     "license": "MIT",
@@ -11,10 +11,14 @@
     "keywords": [
         "javascript",
         "form",
-        "form inputs"
+        "input"
     ],
     "author": "Jan Thore Skjelfjord",
-    "homepage": "https://github.com/saucecode-dev",
+    "bugs": {
+        "url": "https://github.com/saucecode-dev/form-collector/issues",
+        "email" : "saucecode-bugs@skjelfjord.se"
+    },
+    "homepage": "https://github.com/saucecode-dev/form-collector",
     "scripts": {
         "b": "webpack --progress --config build/webpack.config.js",
         "build": "webpack --progress --config build/webpack.config.js",
